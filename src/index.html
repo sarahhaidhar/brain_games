@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+ <script src="./main.js" defer></script>
+</head>
+<body>
+    <nav class="bg-pink-300 fixed w-full top-0">
+        <div class="flex flex-wrap font-mono">
+            <a href="wikipedia.org" class="p-5">Wikipedia</a>
+            <a href="wikipedia.org" class = "p-5">Wikipedia</a>
+            <a href="wikipedia.org" class = "p-5">Wikipedia</a>
+        </div>
+    </nav>
+    <div class="mt-30"></div>
+
+    <div class="flex justify-center items-center pb-10 gap-10">
+        <button class = "font-mono" style="background-color: pink; border-radius: 20px; width: 100px; height: 50px;" type="button" onclick="initialize()" id="start_button">START</button>
+        <button class = "font-mono" style="background-color: pink; border-radius: 20px; width: 100px; height: 50px;" type="button" onclick="initialize()" id="rules_button" disabled>Rules</button>
+        <button class = "font-mono" style="background-color: pink; border-radius: 20px; width: 100px; height: 50px;" type="button" onclick="initialize()" id="scores_button" disabled>Rules</button>
+    </div>
+
+
+
+    <h1 class="text-5xl text-bold text-center font-mono pb-5" id="countdown_header">
+    GET READY...
+    </h1>
+    <div class="flex flex-wrap">
+        <div class="memory p-10 text-xl flex-1 border-2 border-black"></div>
+        <div class="memory p-10 text-xl flex-1 border-2 border-black"></div>
+        <div class="memory p-10 text-xl flex-1 border-2 border-black"></div>
+        <div class="memory p-10 text-xl flex-1 border-2 border-black"></div>
+        <div class="memory p-10 text-xl flex-1 border-2 border-black"></div>
+    </div>
+    <h1 class="text-5xl text-bold text-center font-mono p-10" style="visibility: hidden;" id="palette_header">Colour Palette</h1>
+    <div class="palette_container flex flex-wrap gap-10 justify-center items-center" style="visibility:hidden" id="palette_container">
+        <div class="palette w-20 h-20 border-2 rounded-full"></div>
+        <div class="palette w-20 h-20 border-2 rounded-full"></div>
+        <div class="palette w-20 h-20 border-2 rounded-full"></div>
+        <div class="palette w-20 h-20 border-2 rounded-full"></div>
+        <div class="palette w-20 h-20 border-2 rounded-full"></div>
+
+    </div>
+
+    <div class="flex justify-center items-center pb-10 pt-10">
+        <button class = "font-mono" style="background-color: pink; border-radius: 20px; width: 100px; height: 50px;" type="button" onclick="check_answer()" id="submit_button">SUBMIT</button>
+    </div>
+    
+</body>
+</html>
